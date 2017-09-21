@@ -8,13 +8,13 @@ def game
 
     if user_answer == ran_num
       puts "You win! The correct number is #{ran_num}"
-      puts "#{@counter}"
+      puts "It took you #{@counter} tries to win!"
       break
     elsif user_answer > ran_num
-      puts "You guessed to high! Guess a lower number!"
+      puts "You guessed too high! Guess a lower number!"
       @counter += 1
     elsif user_answer < ran_num
-      puts "You guessed to low! Guess a higher number!"
+      puts "You guessed too low! Guess a higher number!"
       @counter += 1
     end
   end
